@@ -1,1 +1,33 @@
 // Navigation code here
+
+.pageTitle {
+    @media @phone{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+}
+
+.nav {
+    font-family: @river-bend;
+    background-color: @sea-shell;
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border: 1px double #e0e0e0;
+    h1{
+        font-size:4rem;
+    }
+    a{
+        padding: 10px 15px;
+        color: @ebony-clay;
+    }
+    @media @phone{
+        flex-direction: column;
+        align-items: center;
+    }
+}
